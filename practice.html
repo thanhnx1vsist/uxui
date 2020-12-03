@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tốc ký tiếng Việt</title>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <!-- Popper JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script>
+    function myFunction(event) {
+      var x = event.which || event.keyCode;
+      var id;
+      // alert(x);
+      if (x === 32) {
+        id = 'space'
+      }
+      else if (x === 188) {
+        id = 'less'
+      }
+      else if (x === 190) {
+        id = 'more'
+      }
+      else if (x === 8) {
+        id = 'delete'
+      }
+      else if (x === 189) {
+        id = 'sub'
+      }
+      else if (x === 187) {
+        id = 'plus'
+      }
+      else if (x === 192) {
+        id = '`'
+      }
+      else {
+        var id = String.fromCharCode(x);
+      }
+      var button = document.getElementById(id);
+      button.style.backgroundColor = "red";
+      setTimeout(() => {
+        button.style.backgroundColor = '';
+      }, 500);
+    }
+  </script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto" />
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  #container {
+    margin: 100px auto;
+    width: 688px;
+  }
+
+  #write {
+    margin: 0 0 5px;
+    padding: 5px;
+    width: 671px;
+    height: 200px;
+    font: 1em/1.5 Verdana, Sans-Serif;
+    background: #fff;
+    border: 1px solid #f9f9f9;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+  }
+
+  #keyboard {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  #keyboard li {
+    float: left;
+    margin: 0 5px 5px 0;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background: #fff;
+    border: 1px solid #f9f9f9;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+  }
+
+  .capslock,
+  .tab,
+  .left-shift {
+    clear: left;
+  }
+
+  #keyboard .tab,
+  #keyboard .delete {
+    width: 70px;
+  }
+
+  #keyboard .capslock {
+    width: 80px;
+  }
+
+  #keyboard .return {
+    width: 77px;
+  }
+
+  #keyboard .left-shift {
+    width: 95px;
+  }
+
+  #keyboard .right-shift {
+    width: 109px;
+  }
+
+  .lastitem {
+    margin-right: 0;
+  }
+
+  .uppercase {
+    text-transform: uppercase;
+  }
+
+  #keyboard .space {
+    clear: left;
+    width: 681px;
+  }
+
+  .on {
+    display: none;
+  }
+
+  #keyboard li:hover {
+    position: relative;
+    top: 1px;
+    left: 1px;
+    border-color: #e5e5e5;
+    cursor: pointer;
+  }
+</style>
+
+<body>
+  <div class="container-fluid p-0">
+    <!-- navbbar -->
+    <div class="d-flex justify-content-center sticky-top my_navbar">
+      <div class="d-flex justify-content-between py-4 w-75">
+        <div>My Logo</div>
+        <div class="d-flex">
+          <div class="mr-5">
+            <a href="#" class="my_navbar-link">Bộ gõ</a>
+          </div>
+          <div class="mr-5">
+            <a class="my_navbar-link" href="html/practice.html">Luyện gõ</a>
+          </div>
+          <div class="mr-5">
+            <a href="#" class="my_navbar-link">Link 3</a>
+          </div>
+          <div class="mr-5">
+            <a href="#" class="my_navbar-link">Link 4</a>
+          </div>
+          <div class="mr-5">
+            <a href="#" class="my_navbar-link">Link 5</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-4">
+        day la cot hien dong ho dem nguoc 1p
+      </div>
+      <div class="col-sm-8" style="background-color:lavenderblush;">
+        <div id="container">
+          <textarea id="write" rows="6" cols="60" onkeyup="myFunction(event)"></textarea>
+          <ul id="keyboard">
+            <li class="symbol" id="`"><span class="off">`</span><span class="on">~</span></li>
+            <li class="symbol" id="1"><span class="off">1</span><span class="on">!</span></li>
+            <li class="symbol" id="2"><span class="off">2</span><span class="on">@</span></li>
+            <li class="symbol" id="3"><span class="off">3</span><span class="on">#</span></li>
+            <li class="symbol" id="4"><span class="off">4</span><span class="on">$</span></li>
+            <li class="symbol" id="5"><span class="off">5</span><span class="on">%</span></li>
+            <li class="symbol" id="6"><span class="off">6</span><span class="on">^</span></li>
+            <li class="symbol" id="7"><span class="off">7</span><span class="on">&amp;</span></li>
+            <li class="symbol" id="8"><span class="off">8</span><span class="on">*</span></li>
+            <li class="symbol" id="9"><span class="off">9</span><span class="on">(</span></li>
+            <li class="symbol" id="0"><span class="off">0</span><span class="on">)</span></li>
+            <li class="symbol" id="sub"><span class="off">-</span><span class="on">_</span></li>
+            <li class="symbol" id="plus"><span class="off">=</span><span class="on">+</span></li>
+            <li class="delete lastitem" id="delete">delete</li>
+            <li class="tab">tab</li>
+            <li class="letter" id="Q">q</li>
+            <li class="letter" id="W">w</li>
+            <li class="letter" id="E">e</li>
+            <li class="letter" id="R">r</li>
+            <li class="letter" id="T">t</li>
+            <li class="letter" id="Y">y</li>
+            <li class="letter" id="U">u</li>
+            <li class="letter" id="I">i</li>
+            <li class="letter" id="O">o</li>
+            <li class="letter" id="P">p</li>
+            <li class="symbol"><span class="off">[</span><span class="on">{</span></li>
+            <li class="symbol"><span class="off">]</span><span class="on">}</span></li>
+            <li class="symbol lastitem"><span class="off">\</span><span class="on">|</span></li>
+            <li class="capslock">caps lock</li>
+            <li class="letter" id="A">a</li>
+            <li class="letter" id="S">s</li>
+            <li class="letter" id="D">d</li>
+            <li class="letter" id="F">f</li>
+            <li class="letter" id="G">g</li>
+            <li class="letter" id="H">h</li>
+            <li class="letter" id="J">j</li>
+            <li class="letter" id="K">k</li>
+            <li class="letter" id="L">l</li>
+            <li class="symbol"><span class="off">;</span><span class="on">:</span></li>
+            <li class="symbol"><span class="off">'</span><span class="on">&quot;</span></li>
+            <li class="return lastitem">return</li>
+            <li class="left-shift">shift</li>
+            <li class="letter" id="Z">z</li>
+            <li class="letter" id="X">x</li>
+            <li class="letter" id="C">c</li>
+            <li class="letter" id="V">v</li>
+            <li class="letter" id="B">b</li>
+            <li class="letter" id="N">n</li>
+            <li class="letter" id="M">m</li>
+            <li class="symbol" id="less"><span class="off">,</span><span class="on">&lt;</span></li>
+            <li class="symbol" id="more"><span class="off">.</span><span class="on">&gt;</span></li>
+            <li class="symbol"><span class="off">/</span><span class="on">?</span></li>
+            <li class="right-shift lastitem">shift</li>
+            <li class="space lastitem" id="space">&nbsp;</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
