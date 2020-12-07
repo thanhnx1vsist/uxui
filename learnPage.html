@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<!--
+This is a starter template page. Use this page to start your new project from
+scratch. This page gets rid of all links and provides the needed markup only.
+-->
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title>HCI 18 | Starter</title>
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+    <!-- Theme style -->
+    <link rel="stylesheet" href="dist/css/adminlte.min.css">
+    <!-- Google Font: Source Sans Pro -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto" />
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="./styles.css" />
+</head>
+<style>
+    #newbie{
+        position: relative;
+    }
+    a:hover {
+        text-decoration: none;
+    }
+    ul.nav-pills {
+    top: 180px;
+    position: fixed;
+    }
+
+    div.col-8 div {
+        min-height: 300px;
+        border-bottom: 1px solid #000000;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    #newbie .col-8 ul li {
+        list-style-type: square;
+        margin-left: 20px;
+        margin-bottom: 10px;
+    }
+    #newbie .col-8 ul li ul li {
+        list-style-type: circle;
+        margin-left: 20px;
+        margin-top: 10px;
+    }
+    #master, #supermaster{
+        padding-top : 20px;
+        padding-bottom: 20px;
+    }
+</style>
+
+<body class="hold-transition sidebar-mini">
+    <div class="wrapper">
+
+        <!-- Navbar -->
+        <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+            <!-- Left navbar links -->
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+                </li>
+                <li class="nav-item d-none d-sm-inline-block">
+                    <a href="index3.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item d-none d-sm-inline-block">
+                    <a href="#" class="nav-link">Contact</a>
+                </li>
+            </ul>
+
+            <!-- SEARCH FORM -->
+            <form class="form-inline ml-3">
+                <div class="input-group input-group-sm">
+                    <input class="form-control form-control-navbar" type="search" placeholder="Search"
+                        aria-label="Search">
+                    <div class="input-group-append">
+                        <button class="btn btn-navbar" type="submit">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </div>
+                </div>
+            </form>
+
+            <!-- Right navbar links -->
+            <ul class="navbar-nav ml-auto">
+                <!-- Messages Dropdown Menu -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link" data-toggle="dropdown" href="#">
+                        <i class="far fa-comments"></i>
+                        <span class="badge badge-danger navbar-badge">3</span>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+                        <a href="#" class="dropdown-item">
+                            <!-- Message Start -->
+                            <div class="media">
+                                <img src="dist/img/user1-128x128.jpg" alt="User Avatar"
+                                    class="img-size-50 mr-3 img-circle">
+                                <div class="media-body">
+                                    <h3 class="dropdown-item-title">
+                                        Brad Diesel
+                                        <span class="float-right text-sm text-danger"><i class="fas fa-star"></i></span>
+                                    </h3>
+                                    <p class="text-sm">Call me whenever you can...</p>
+                                    <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
+                                </div>
+                            </div>
+                            <!-- Message End -->
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a href="#" class="dropdown-item">
+                            <!-- Message Start -->
+                            <div class="media">
+                                <img src="dist/img/user8-128x128.jpg" alt="User Avatar"
+                                    class="img-size-50 img-circle mr-3">
+                                <div class="media-body">
+                                    <h3 class="dropdown-item-title">
+                                        John Pierce
+                                        <span class="float-right text-sm text-muted"><i class="fas fa-star"></i></span>
+                                    </h3>
+                                    <p class="text-sm">I got your message bro</p>
+                                    <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
+                                </div>
+                            </div>
+                            <!-- Message End -->
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a href="#" class="dropdown-item">
+                            <!-- Message Start -->
+                            <div class="media">
+                                <img src="dist/img/user3-128x128.jpg" alt="User Avatar"
+                                    class="img-size-50 img-circle mr-3">
+                                <div class="media-body">
+                                    <h3 class="dropdown-item-title">
+                                        Nora Silvester
+                                        <span class="float-right text-sm text-warning"><i
+                                                class="fas fa-star"></i></span>
+                                    </h3>
+                                    <p class="text-sm">The subject goes here</p>
+                                    <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
+                                </div>
+                            </div>
+                            <!-- Message End -->
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a href="#" class="dropdown-item dropdown-footer">See All Messages</a>
+                    </div>
+                </li>
+                <!-- Notifications Dropdown Menu -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link" data-toggle="dropdown" href="#">
+                        <i class="far fa-bell"></i>
+                        <span class="badge badge-warning navbar-badge">15</span>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+                        <span class="dropdown-header">15 Notifications</span>
+                        <div class="dropdown-divider"></div>
+                        <a href="#" class="dropdown-item">
+                            <i class="fas fa-envelope mr-2"></i> 4 new messages
+                            <span class="float-right text-muted text-sm">3 mins</span>
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a href="#" class="dropdown-item">
+                            <i class="fas fa-users mr-2"></i> 8 friend requests
+                            <span class="float-right text-muted text-sm">12 hours</span>
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a href="#" class="dropdown-item">
+                            <i class="fas fa-file mr-2"></i> 3 new reports
+                            <span class="float-right text-muted text-sm">2 days</span>
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a href="#" class="dropdown-item dropdown-footer">See All Notifications</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-widget="control-sidebar" data-slide="true" href="#" role="button"><i
+                            class="fas fa-th-large"></i></a>
+                </li>
+            </ul>
+        </nav>
+        <!-- /.navbar -->
+
+        <!-- Main Sidebar Container -->
+        <aside class="main-sidebar sidebar-dark-primary elevation-4">
+            <!-- Brand Logo -->
+            <a href="index3.html" class="brand-link">
+                <img src="dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"
+                    style="opacity: .8">
+                <span class="brand-text font-weight-light">HCI 18</span>
+            </a>
+
+            <!-- Sidebar -->
+            <div class="sidebar">
+                <!-- Sidebar user panel (optional) -->
+                <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+                    <div class="image">
+                        <img src="dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
+                    </div>
+                    <div class="info">
+                        <a href="#" class="d-block">Hihihaha</a>
+                    </div>
+                </div>
+
+                <!-- Sidebar Menu -->
+                <nav class="mt-2">
+                    <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu"
+                        data-accordion="false">
+                        <!-- Add icons to the links using the .nav-icon class
+               with font-awesome or any other icon font library -->
+                        <li class="nav-item has-treeview menu-open">
+                            <a href="#" class="nav-link active">
+                                <i class="nav-icon fas fa-tachometer-alt"></i>
+                                <p>
+                                    Học gõ
+                                    <i class="right fas fa-angle-left"></i>
+                                </p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <i class="fas fa-theater-masks"></i>
+                                <p>
+                                    Bảng xếp hạng
+                                </p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <i class="fas fa-spell-check"></i>
+                                <p>
+                                    Từ điển
+                                    <span class="right badge badge-danger">New</span>
+                                </p>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- /.sidebar-menu -->
+            </div>
+            <!-- /.sidebar -->
+        </aside>
+
+        <!-- Content Wrapper. Contains page content -->
+        <div class="content-wrapper">
+            <!-- Content Header (Page header) -->
+            <div class="content-header">
+                <div class="container-fluid">
+                    <div class="row mb-2">
+                        <div class="col-sm-6">
+                            <h1 class="m-0 text-dark">Học gõ</h1>
+                        </div><!-- /.col -->
+                        <div class="col-sm-6">
+                            <ol class="breadcrumb float-sm-right">
+                                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                                <li class="breadcrumb-item active">Starter Page</li>
+                            </ol>
+                        </div><!-- /.col -->
+                    </div><!-- /.row -->
+                </div><!-- /.container-fluid -->
+            </div>
+            <!-- /.content-header -->
+
+            <!-- Main content -->
+            <!-- Main content -->
+            <section class="content">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-12">
+                            <!-- /.card -->
+
+                            <div class="card">
+                                <!-- /.card-header -->
+                                <ul class="nav nav-tabs">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" data-toggle="tab" href="#newbie">Cơ bản</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" data-toggle="tab" href="#master">Nâng cao</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" data-toggle="tab" href="#supermaster">Siêu nâng cao</a>
+                                    </li>
+                                </ul>
+                                <div class="tab-content">
+                                    <div id="newbie" class="container tab-pane active" data-spy="scroll" data-target="#myScrollspy" data-offset="1"><br>
+                                        <div class="container-fluid">
+                                            <div class="row">
+                                              <nav class=" col-4" id="myScrollspy" >
+                                                <ul class="nav nav-pills flex-column">
+                                                  <li class="nav-item">
+                                                    <a class="nav-link active col-10" href="#section1">Mục tiêu</a>
+                                                  </li>
+                                                  <li class="nav-item">
+                                                    <a class="nav-link col-10" href="#section2">Giới thiệu bàn phím gõ tốc ký tiếng Việt</a>
+                                                  </li>
+                                                  <li class="nav-item">
+                                                    <a class="nav-link col-10" href="#section3">Nguyên tắc gõ tốc ký</a>
+                                                  </li>
+                                                </ul>
+                                              </nav>
+                                              <div class=" col-8">
+                                                <div id="section1">    
+                                                  <span style="font-size: 20px;">Mục tiêu</span><br><br>
+                                                  <ul>
+                                                      <li><p>Học viên hiểu được cấu trúc bàn phím gõ tốc ký tiếng
+                                                        Việt, ánh xạ được các phím trên bàn phím gõ tốc ký
+                                                        tiếng Việt và bàn phím QWERTY thông thường.</p></li>
+                                                        <li>
+                                                            <p>Học viên hiểu, ghi nhớ được các quy tắc gõ tốc ký
+                                                                tiếng Việt</p>
+                                                        </li>
+                                                        <li>
+                                                            <p>Hỗ trợ học viên rèn luyện kỹ năng gõ tốc ký, hướng
+                                                                tới mục tiêu gõ tốc ký với tốc độ gõ là 130wpm.</p>
+                                                        </li>
+                                                  </ul>
+                                                </div>
+                                                <div id="section2"> 
+                                                    <span style="font-size: 20px;">Bàn phím gõ tốc ký (Steno)</span><br><br>
+                                                    <ul>
+                                                        <li>
+                                                            <p>Bàn phím gõ tốc ký tiếng Việt gồm 22 phím + 1 phím dài</p>
+                                                            <ul>
+                                                                <li>
+                                                                    <p>4 phím đặc biệt (S, T, H, N), nhãn trùng nhau nhưng vai trò khác nhau</p>
+                                                                </li>
+                                                                <li>
+                                                                    <p>1 phím dài để chuyển chế độ gõ số</p>
+                                                                </li>
+                                                                <li>
+                                                                    <p>Bàn phím gõ tốc ký tiếng Việt được ánh xạ lên bàn phím Qwerty gồm 24 phím.</p> 
+                                                                </li>
+                                                                <li>
+                                                                    <p>Dải số từ 1-0 tương ứng với thanh số trên bàn phím gõ tốc ký tiếng Việt</p><br><br>
+                                                                    <img src="../uxui/image/banphim.png" class="img-responsive"/>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                    <br><br>
+                                                    <span style="font-size: 20px;">Cách đặt ngón tay trên bàn phím tốc ký</span><br><br>
+                                                    <ul>
+                                                        <li>
+                                                            <img src="../uxui/image/cachdattaygotu.png" class="img-responsive"/>
+                                                        </li>
+                                                        <li>
+                                                            <img src="../uxui/image/cachdattaygoso.png" class="img-responsive"/>
+                                                        </li>
+                                                    </ul>
+                                                    <span style="font-size: 20px;">Trật tự của bàn phím gõ tốc ký</span><br><br>
+                                                    <img src="../uxui/image/trattugophim.png" class="img-responsive"/>
+                                                    <ul>
+                                                        <li>
+                                                            <p>Trật tự của bàn phím theo chiều mũi tên (S T K P R H N H S * I U O E A W Y J N G T K),
+                                                                từ trái qua phải, từ trên xuống dưới.</p>
+                                                        </li>
+                                                        <li>
+                                                            <p>Bất cứ tổ hợp phím nào phù hợp với trật tự này thì đều có thể gõ trong một lượt
+                                                                nhấn.</p>
+                                                        </li>
+                                                        <li>
+                                                            <p>Việc ghi nhớ trật tự các phím là rất quan trọng vì bàn phím gõ tốc ký tiếng Việt gồm
+                                                                nhiều phím trùng nhau, tuy nhiên mỗi vị trí lại có chức năng khác nhau.</p>
+                                                        </li>
+                                                    </ul>
+                                                    <span style="font-size: 20px;">Thực hành: làm quen với bàn phím tốc ký
+                                                        tiếng Việt – gõ theo hướng dẫn</span><br><br>
+                                                        <p>Click vào phần luyện gõ của trang web.</p>
+                                                </div>        
+                                                <div id="section3">         
+                                                    <span style="font-size: 20px;">QUY TẮC GÕ ÂM TIẾT (TỪ ĐƠN) TIẾNG
+                                                        VIỆT TRÊN BÀN PHÍM GÕ TỐC KÝ (Steno)</span><br><br>
+                                                    <img src="../uxui/image/cautrucamtutiengviet.png" style="max-width: 100%;" class="img-responsive"/>
+                                                    <ul>
+                                                        <li>
+                                                            <p>Gõ tốc ký tiếng Việt là gõ theo cách phát âm.</p>
+                                                        </li>
+                                                        <li>
+                                                            <p>Tuỳ thuộc vào cách phát âm, một bộ phím biểu diễn một âm tiết tiếng Việt có thể bao gồm các thành phần:</p>
+                                                            <ul>
+                                                                <li>
+                                                                    <p>Âm đầu + Âm chính (VD: hòa, xã, chủ, tự, do, vị, gõ, từ,...)</p>
+                                                                </li>
+                                                                <li>
+                                                                    <p>Âm chính (VD: ủy, ưa, ỉ, ồ, á, ừ, ỷ, ...)</p>
+                                                                </li>
+                                                                <li>
+                                                                    <p>Âm chính + Âm cuối (VD: ánh, ình, ông, ong, ...)</p>
+                                                                </li>
+                                                                <li>
+                                                                    <p>Âm đầu + Âm chính + Âm cuối (VD: cộng, hội, hết,...)</p>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                        
+                                                    </ul>
+                                                    <img src="../uxui/image/cautrucbanphimtuongung.png" class="img-responsive" style="max-width: 100%;"/>
+                                                    <br><br><span style="font-size: 20px;">QUY TẮC GÕ ÂM ĐẦU</span><br><br>
+                                                    <ul>
+                                                        <li>
+                                                            <img src="../uxui/image/quytacgoamdau.png" class="img-responsive" style="max-width: 100%;"/>
+                                                        </li>
+                                                        <li>
+                                                            <img src="../uxui/image/quytacgoamdau11.png" class="img-responsive" style="max-width: 100%;"/>
+                                                        </li>
+                                                    </ul><br><br>
+                                                    <p>Do tài liệu còn nhiều nên các bạn có thể tham khảo link sau</p><br><br>
+                                                    <a href="https://drive.google.com/file/d/1GWzQTxJ0-HwLyERvmiBBUso_rYQc4GxA/view">https://drive.google.com/file/d/1GWzQTxJ0-HwLyERvmiBBUso_rYQc4GxA/view</a>
+                                                    <br><br><p>Xin lỗi vì sự bất tiện này.</p>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                    </div>
+                                    <div id="master" class="container tab-pane fade"><br>
+                                      
+                                      <span style="font-size: 20px;">Hiện tại trang web đang trong giai đoạn phát triển. Các bạn có thể tham khảo link sau:</span><br><br>
+                                      <a href="https://drive.google.com/file/d/1GWzQTxJ0-HwLyERvmiBBUso_rYQc4GxA/view">https://drive.google.com/file/d/1GWzQTxJ0-HwLyERvmiBBUso_rYQc4GxA/view</a>
+                                    </div>
+                                    <div id="supermaster" class="container tab-pane fade"><br>
+                                      <span style="font-size: 20px;">Tính năng này hiện chưa có....</span>
+                                      <span style="font-size: 20px;">Trong thời gian chờ đợi, các bạn có thể tham khảo link sau:</span><br><br>
+                                      <a href="https://drive.google.com/file/d/1GWzQTxJ0-HwLyERvmiBBUso_rYQc4GxA/view">https://drive.google.com/file/d/1GWzQTxJ0-HwLyERvmiBBUso_rYQc4GxA/view</a>
+                                    </div>
+                                </div>
+                                <!-- /.card-body -->
+                            </div>
+                            <!-- /.card -->
+                        </div>
+                        <!-- /.col -->
+                    </div>
+                    <!-- /.row -->
+                </div>
+                <!-- /.container-fluid -->
+            </section>
+            <!-- /.content -->
+        </div>
+    </div>
+    <!-- /.content-wrapper -->
+
+    <!-- Control Sidebar -->
+    <aside class="control-sidebar control-sidebar-dark">
+        <!-- Control sidebar content goes here -->
+        <div class="p-3">
+            <h5>Title</h5>
+            <p>Sidebar content</p>
+        </div>
+    </aside>
+    <!-- /.control-sidebar -->
+
+    <!-- Main Footer -->
+    <footer class="main-footer">
+        <!-- To the right -->
+        <div class="float-right d-none d-sm-inline">
+            Anything you want
+        </div>
+        <!-- Default to the left -->
+        <strong>Copyright &copy; 2014-2019 <a href="https://adminlte.io">AdminLTE.io</a>.</strong> All rights reserved.
+    </footer>
+    </div>
+    <!-- ./wrapper -->
+
+    <!-- REQUIRED SCRIPTS -->
+
+    <!-- jQuery -->
+    <script src="plugins/jquery/jquery.min.js"></script>
+    <!-- Bootstrap 4 -->
+    <script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- AdminLTE App -->
+    <script src="dist/js/adminlte.min.js"></script>
+</body>
+
+</html>
