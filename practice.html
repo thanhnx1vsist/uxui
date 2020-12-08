@@ -9,7 +9,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HCI 18 | Starter</title>
 
     <!-- Font Awesome Icons -->
@@ -64,11 +64,112 @@ scratch. This page gets rid of all links and provides the needed markup only.
                 button.style.backgroundColor = '';
             }, 500);
         }
+        console.log(screen.width);
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto" />
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <link rel="stylesheet" href="./styles.css" />
+    <style>
+        @media only screen and (min-width: 1367px){
+            #pattern{
+                margin-top: 20px;
+                margin-left: 10px;
+                margin-bottom: 20px;
+                word-wrap: break-word;
+                padding: 10px;
+                /* width: 540px; */
+                /* width: 100%; */
+                height: 120px;
+            }
+            #write {
+                margin: 0 0 5px;
+                margin-left: 10px;
+                padding: 10px;
+                /* width: 540px; */
+                height: 120px;
+            }
+            #keyboard {
+                margin-top: 20px;
+                padding: 5px;
+            }
+            #firstkeyboard {
+                /* width: 540px;  */
+                margin-top: 20px; 
+                margin-bottom: 20px;
+                padding-left: 35px;
+            }
+            #secondkeyboard { 
+                margin-top: 20px;
+            } 
+            #keyboard li {
+                float: left;
+                margin: 5px 10px 10px 0;
+                width: 45px;
+                height: 45px;
+                line-height: 45px;
+            }
+            #keyboard li .bot{
+                position: absolute; 
+                top: 10px; 
+                left: 10px;
+                opacity: 0.5;
+            }
+            #keyboard li .top{
+                position: absolute; 
+                bottom: 10px;
+                font-size: small;
+            }
+            #keyboard .tab,
+            #keyboard .delete {
+                width: 85px;
+            }
+
+            #keyboard .capslock {
+                width: 90px;
+            }
+
+            #keyboard .return {
+                width: 95px;
+            }
+
+            #keyboard .left-shift {
+                width: 110px;
+            }
+
+            #keyboard .right-shift {
+                width: 130px; 
+            }
+            #keyboard2 {
+                margin-top: 20px;
+                padding: 2px;
+            }
+            #keyboard2 .lastrow{   
+                margin-left: 195px;
+            }
+            
+            #keyboard2 li {
+                float: left;
+                margin: 5px 20px 6px 0;
+                width: 45px;
+                height: 60px;
+                line-height: 50px;
+            }
+            
+            #keyboard2 #space-second {
+                clear: left;
+                width: 630px;
+                height: 60px;
+            }
+            
+            #keyboard .space {
+                clear: left;
+                width: 800px;
+            }
+        }
+
+
+    </style>
 </head>
 
 <body class="hold-transition sidebar-mini">
@@ -455,7 +556,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                                         </div>
                                         <div id="secondkeyboard" class="col-5">
                                             <ul id="keyboard2">
-                                                <li id="space-second">&nbsp;</li>
+                                                <li id="space-second" class="space lastitem">&nbsp;</li>
                                                 <li class="letter">S</li>
                                                 <li class="letter">K</li>
                                                 <li class="letter">R</li>
@@ -466,7 +567,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                                                 <li class="letter">J</li>
                                                 <li class="letter">N</li>
                                                 <li class="letter">T</li>
-                                                <li class="letter">T</li>
+                                                <li class="letter" style="clear: left;">T</li>
                                                 <li class="letter">P</li>
                                                 <li class="letter">H</li>
                                                 <li class="letter">N</li>
