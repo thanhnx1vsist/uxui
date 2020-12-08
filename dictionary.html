@@ -20,22 +20,26 @@ scratch. This page gets rid of all links and provides the needed markup only.
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
 </head>
 <style>
-    .dataTables_wrapper {
+  .dataTables_wrapper {
     padding-top: 10px;
-    }
-    .dataTables_length {
+  }
+
+  .dataTables_length {
     margin-top: 10px;
     float: right;
-    }
-    .dataTables_filter {
+  }
+
+  .dataTables_filter {
     float: left;
     margin-top: 10px;
-    }
-    label {
+  }
+
+  label {
     font-weight: 400;
     margin-bottom: 10px;
-    }
-    .dataTables_filter input {
+  }
+
+  .dataTables_filter input {
     background-color: transparent;
     background-image: linear-gradient(#1976d2, #1976d2), linear-gradient(#b1b8bb, #b1b8bb);
     background-position: center bottom, center calc(99%);
@@ -47,38 +51,48 @@ scratch. This page gets rid of all links and provides the needed markup only.
     float: none;
     margin-left: 10px;
     transition: background 0s ease-out 0s;
-    }
-    .m-b-20 {
-    margin-bottom: 20px!important;
-    }
-    .table{
-        margin-bottom: 0;
-    }
-    .dataTables_wrapper .dataTables_paginate {
+  }
+
+  .m-b-20 {
+    margin-bottom: 20px !important;
+  }
+
+  .table {
+    margin-bottom: 0;
+  }
+
+  .dataTables_wrapper .dataTables_paginate {
     float: right;
     padding-top: 0.25em;
     text-align: right;
-    }
-    .dataTables_wrapper .dataTables_paginate .paginate_button.disabled, .dataTables_wrapper .dataTables_paginate .paginate_button.disabled:active, .dataTables_wrapper .dataTables_paginate .paginate_button.disabled:hover {
+  }
+
+  .dataTables_wrapper .dataTables_paginate .paginate_button.disabled,
+  .dataTables_wrapper .dataTables_paginate .paginate_button.disabled:active,
+  .dataTables_wrapper .dataTables_paginate .paginate_button.disabled:hover {
     background: transparent none repeat scroll 0 0;
     border: 1px solid #ddd;
     box-shadow: none;
     color: #67757c;
     cursor: default;
-    }
-    .dataTables_wrapper .dataTables_paginate .paginate_button {
+  }
+
+  .dataTables_wrapper .dataTables_paginate .paginate_button {
     box-sizing: border-box;
     display: inline-block;
     min-width: 1.5em;
     padding: 0.5em 1em;
     text-align: center;
-    }
-    .dataTables_wrapper .dataTables_paginate .paginate_button.current, .dataTables_wrapper .dataTables_paginate .paginate_button.current:hover {
+  }
+
+  .dataTables_wrapper .dataTables_paginate .paginate_button.current,
+  .dataTables_wrapper .dataTables_paginate .paginate_button.current:hover {
     background-color: #1976d2;
     border: 1px solid #1976d2;
     color: #ffffff !important;
-    }
-    .dataTables_wrapper .dataTables_paginate .paginate_button {
+  }
+
+  .dataTables_wrapper .dataTables_paginate .paginate_button {
     border: 1px solid #ddd;
     box-sizing: border-box;
     color: #67757c;
@@ -88,9 +102,9 @@ scratch. This page gets rid of all links and provides the needed markup only.
     padding: 0.5em 1em;
     text-align: center;
     text-decoration: none;
-    }
-
+  }
 </style>
+
 <body class="hold-transition sidebar-mini">
   <div class="wrapper">
 
@@ -102,7 +116,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
           <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
         </li>
         <li class="nav-item d-none d-sm-inline-block">
-          <a href="index3.html" class="nav-link">Home</a>
+          <a href="index4.html" class="nav-link">Home</a>
         </li>
         <li class="nav-item d-none d-sm-inline-block">
           <a href="#" class="nav-link">Contact</a>
@@ -219,7 +233,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <!-- Main Sidebar Container -->
     <aside class="main-sidebar sidebar-dark-primary elevation-4">
       <!-- Brand Logo -->
-      <a href="index3.html" class="brand-link">
+      <a href="index4.html" class="brand-link">
         <img src="dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"
           style="opacity: .8">
         <span class="brand-text font-weight-light">HCI 18</span>
@@ -266,6 +280,14 @@ scratch. This page gets rid of all links and provides the needed markup only.
               </ul>
             </li>
             <li class="nav-item">
+              <a href="learnPage.html" class="nav-link">
+                <i class="fas fa-theater-masks"></i>
+                <p>
+                  Lý thuyết
+                </p>
+              </a>
+            </li>
+            <li class="nav-item">
               <a href="#" class="nav-link">
                 <i class="fas fa-theater-masks"></i>
                 <p>
@@ -308,170 +330,304 @@ scratch. This page gets rid of all links and provides the needed markup only.
         </div><!-- /.container-fluid -->
       </div>
       <section class="content">
-          <div class="container-fluid">
-            <div class="row">
-                <div class="col-12">
-                    <div class="card">
-                        <div class="card-body">
-                            <div>
-                                <h3 class="text-center">Chi tiết bộ quy tắc gõ </h3>
-                            </div>
-                            <hr>
-                            <ul class="nav nav-pills m-b-20">            
-                                <li class="nav-item"><a href="#stenoRule-1" class="nav-link list-group-item active" id="tab-1" data-toggle="list" aria-expanded="false" role="tab" aria-selected="true">Âm đầu</a></li>
-                            
-                                <li class="nav-item"><a href="#stenoRule-2" class="nav-link list-group-item" id="tab-2" data-toggle="list" aria-expanded="false" role="tab" aria-selected="false">Âm chính</a></li>
-                            
-                                <li class="nav-item"><a href="#stenoRule-3" class="nav-link list-group-item" id="tab-3" data-toggle="list" aria-expanded="false" role="tab" aria-selected="false">Âm cuối</a></li>
-                            </ul>
-                            <div class="tab-content br-n pn">
-                                <div id="stenoRule-1" class="tab-pane active" role="tabpanel">
-                                    <h4 class=" mb-4">Danh sách quy tắc cho Âm đầu</h4>
-                                    <div class="table-responsive">
-                                        <div id="table-list-stenoRule-1_wrapper" class="dataTables_wrapper no-footer">
-                                            <div class="dataTables_length" id="table-list-stenoRule-1_length">
-                                                <label>Hiển thị <select name="table-list-stenoRule-1_length" aria-controls="table-list-stenoRule-1" class=""><option value="5">5</option><option value="10">10</option><option value="25">25</option><option value="50">50</option><option value="-1">All</option></select> mục</label></div><div id="table-list-stenoRule-1_filter" class="dataTables_filter"><label>Tìm nhanh:<input type="search" class="" placeholder="" aria-controls="table-list-stenoRule-1"></label></div><table id="table-list-stenoRule-1" class="table-list table table-striped table-bordered dataTable no-footer" style="width: 100%;" role="grid" aria-describedby="table-list-stenoRule-1_info">
-                                            <thead>
-                                            <tr role="row"><th class="sorting_asc" tabindex="0" aria-controls="table-list-stenoRule-1" rowspan="1" colspan="1" aria-sort="ascending" aria-label="STT: activate to sort column descending" style="width: 95.6px;">STT</th><th class="sorting" tabindex="0" aria-controls="table-list-stenoRule-1" rowspan="1" colspan="1" aria-label="Âm đầu: activate to sort column ascending" style="width: 141.6px;">Âm đầu</th><th class="sorting" tabindex="0" aria-controls="table-list-stenoRule-1" rowspan="1" colspan="1" aria-label="Phím steno: activate to sort column ascending" style="width: 187.6px;">Phím steno</th></tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr class="1-column-first odd" role="row">
-                                                    <td class="index sorting_1">1</td>
-                                                    <td class="value-word">ngh</td>
-                                                    <td class="value-key-steno">KR</td>
-                                                </tr><tr class="2-column-first even" role="row">
-                                                    <td class="index sorting_1">2</td>
-                                                    <td class="value-word">đ</td>
-                                                    <td class="value-key-steno">TP</td>
-                                                </tr><tr class="3-column-first odd" role="row">
-                                                    <td class="index sorting_1">3</td>
-                                                    <td class="value-word">kh</td>
-                                                    <td class="value-key-steno">KH</td>
-                                                </tr><tr class="4-column-first even" role="row">
-                                                    <td class="index sorting_1">4</td>
-                                                    <td class="value-word">gh</td>
-                                                    <td class="value-key-steno">KP</td>
-                                                </tr><tr class="5-column-first odd" role="row">
-                                                    <td class="index sorting_1">5</td>
-                                                    <td class="value-word">b</td>
-                                                    <td class="value-key-steno">P</td>
-                                                </tr></tbody>
-                                        </table><div class="dataTables_info" id="table-list-stenoRule-1_info" role="status" aria-live="polite">Hiển thị 1 đến 5 của 27 mục</div><div class="dataTables_paginate paging_simple_numbers" id="table-list-stenoRule-1_paginate"><a class="paginate_button previous disabled" aria-controls="table-list-stenoRule-1" data-dt-idx="0" tabindex="0" id="table-list-stenoRule-1_previous">Trở về</a><span><a class="paginate_button current" aria-controls="table-list-stenoRule-1" data-dt-idx="1" tabindex="0">1</a><a class="paginate_button " aria-controls="table-list-stenoRule-1" data-dt-idx="2" tabindex="0">2</a><a class="paginate_button " aria-controls="table-list-stenoRule-1" data-dt-idx="3" tabindex="0">3</a><a class="paginate_button " aria-controls="table-list-stenoRule-1" data-dt-idx="4" tabindex="0">4</a><a class="paginate_button " aria-controls="table-list-stenoRule-1" data-dt-idx="5" tabindex="0">5</a><a class="paginate_button " aria-controls="table-list-stenoRule-1" data-dt-idx="6" tabindex="0">6</a></span><a class="paginate_button next" aria-controls="table-list-stenoRule-1" data-dt-idx="7" tabindex="0" id="table-list-stenoRule-1_next">Tiếp theo</a></div></div>
-                                    </div>
-                                </div>
-                            
-                                <div id="stenoRule-2" class="tab-pane" role="tabpanel">
-                                    
-                                    
-                                        <h4 class=" mb-4">Danh sách quy tắc cho Âm chính</h4>
-                                    
-                                    <div class="table-responsive">
-                                        <div id="table-list-stenoRule-2_wrapper" class="dataTables_wrapper no-footer"><div class="dataTables_length" id="table-list-stenoRule-2_length"><label>Hiển thị <select name="table-list-stenoRule-2_length" aria-controls="table-list-stenoRule-2" class=""><option value="5">5</option><option value="10">10</option><option value="25">25</option><option value="50">50</option><option value="-1">All</option></select> mục</label></div><div id="table-list-stenoRule-2_filter" class="dataTables_filter"><label>Tìm nhanh:<input type="search" class="" placeholder="" aria-controls="table-list-stenoRule-2"></label></div><table id="table-list-stenoRule-2" class="table-list table table-striped table-bordered dataTable no-footer" style="width: 100%;" role="grid" aria-describedby="table-list-stenoRule-2_info">
-                                            <thead>
-                                            <tr role="row"><th class="sorting_asc" tabindex="0" aria-controls="table-list-stenoRule-2" rowspan="1" colspan="1" aria-sort="ascending" aria-label="STT: activate to sort column descending" style="width: 0px;">STT</th><th class="sorting" tabindex="0" aria-controls="table-list-stenoRule-2" rowspan="1" colspan="1" aria-label="Âm chính: activate to sort column ascending" style="width: 0px;">Âm chính</th><th class="sorting" tabindex="0" aria-controls="table-list-stenoRule-2" rowspan="1" colspan="1" aria-label="Phím steno: activate to sort column ascending" style="width: 0px;">Phím steno</th></tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr class="1-column-first odd" role="row">
-                                                    <td class="index sorting_1">1</td>
-                                                    <td class="value-word">uổ</td>
-                                                    <td class="value-key-steno">-HSUO</td>
-                                                </tr><tr class="2-column-first even" role="row">
-                                                    <td class="index sorting_1">2</td>
-                                                    <td class="value-word">uỗ</td>
-                                                    <td class="value-key-steno">N-SUO</td>
-                                                </tr><tr class="3-column-first odd" role="row">
-                                                    <td class="index sorting_1">3</td>
-                                                    <td class="value-word">ă</td>
-                                                    <td class="value-key-steno">*-A</td>
-                                                </tr><tr class="4-column-first even" role="row">
-                                                    <td class="index sorting_1">4</td>
-                                                    <td class="value-word">uộ</td>
-                                                    <td class="value-key-steno">N-UO</td>
-                                                </tr><tr class="5-column-first odd" role="row">
-                                                    <td class="index sorting_1">5</td>
-                                                    <td class="value-word">uớ</td>
-                                                    <td class="value-key-steno">-SY</td>
-                                                </tr></tbody>
-                                        </table><div class="dataTables_info" id="table-list-stenoRule-2_info" role="status" aria-live="polite">Hiển thị 1 đến 5 của 172 mục</div><div class="dataTables_paginate paging_simple_numbers" id="table-list-stenoRule-2_paginate"><a class="paginate_button previous disabled" aria-controls="table-list-stenoRule-2" data-dt-idx="0" tabindex="0" id="table-list-stenoRule-2_previous">Trở về</a><span><a class="paginate_button current" aria-controls="table-list-stenoRule-2" data-dt-idx="1" tabindex="0">1</a><a class="paginate_button " aria-controls="table-list-stenoRule-2" data-dt-idx="2" tabindex="0">2</a><a class="paginate_button " aria-controls="table-list-stenoRule-2" data-dt-idx="3" tabindex="0">3</a><a class="paginate_button " aria-controls="table-list-stenoRule-2" data-dt-idx="4" tabindex="0">4</a><a class="paginate_button " aria-controls="table-list-stenoRule-2" data-dt-idx="5" tabindex="0">5</a><span class="ellipsis">…</span><a class="paginate_button " aria-controls="table-list-stenoRule-2" data-dt-idx="6" tabindex="0">35</a></span><a class="paginate_button next" aria-controls="table-list-stenoRule-2" data-dt-idx="7" tabindex="0" id="table-list-stenoRule-2_next">Tiếp theo</a></div></div>
-                                    </div>
-                                </div>
-                            
-                                <div id="stenoRule-3" class="tab-pane" role="tabpanel">
-                                    
-                                    
-                                        <h4 class="mb-4">Danh sách quy tắc cho Âm cuối</h4>
-                                    
-                                    <div class="table-responsive">
-                                        <div id="table-list-stenoRule-3_wrapper" class="dataTables_wrapper no-footer"><div class="dataTables_length" id="table-list-stenoRule-3_length"><label>Hiển thị <select name="table-list-stenoRule-3_length" aria-controls="table-list-stenoRule-3" class=""><option value="5">5</option><option value="10">10</option><option value="25">25</option><option value="50">50</option><option value="-1">All</option></select> mục</label></div><div id="table-list-stenoRule-3_filter" class="dataTables_filter"><label>Tìm nhanh:<input type="search" class="" placeholder="" aria-controls="table-list-stenoRule-3"></label></div><table id="table-list-stenoRule-3" class="table-list table table-striped table-bordered dataTable no-footer" style="width: 100%;" role="grid" aria-describedby="table-list-stenoRule-3_info">
-                                            <thead>
-                                            <tr role="row"><th class="sorting_asc" tabindex="0" aria-controls="table-list-stenoRule-3" rowspan="1" colspan="1" aria-sort="ascending" aria-label="STT: activate to sort column descending" style="width: 0px;">STT</th><th class="sorting" tabindex="0" aria-controls="table-list-stenoRule-3" rowspan="1" colspan="1" aria-label="Âm cuối: activate to sort column ascending" style="width: 0px;">Âm cuối</th><th class="sorting" tabindex="0" aria-controls="table-list-stenoRule-3" rowspan="1" colspan="1" aria-label="Phím steno: activate to sort column ascending" style="width: 0px;">Phím steno</th></tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr class="1-column-first odd" role="row">
-                                                    <td class="index sorting_1">1</td>
-                                                    <td class="value-word">p</td>
-                                                    <td class="value-key-steno">-TK</td>
-                                                </tr><tr class="2-column-first even" role="row">
-                                                    <td class="index sorting_1">2</td>
-                                                    <td class="value-word">c</td>
-                                                    <td class="value-key-steno">-NK</td>
-                                                </tr><tr class="3-column-first odd" role="row">
-                                                    <td class="index sorting_1">3</td>
-                                                    <td class="value-word">t</td>
-                                                    <td class="value-key-steno">-NT</td>
-                                                </tr><tr class="4-column-first even" role="row">
-                                                    <td class="index sorting_1">4</td>
-                                                    <td class="value-word">ch</td>
-                                                    <td class="value-key-steno">-GK</td>
-                                                </tr><tr class="5-column-first odd" role="row">
-                                                    <td class="index sorting_1">5</td>
-                                                    <td class="value-word">u</td>
-                                                    <td class="value-key-steno">-JG</td>
-                                                </tr></tbody>
-                                        </table><div class="dataTables_info" id="table-list-stenoRule-3_info" role="status" aria-live="polite">Hiển thị 1 đến 5 của 12 mục</div><div class="dataTables_paginate paging_simple_numbers" id="table-list-stenoRule-3_paginate"><a class="paginate_button previous disabled" aria-controls="table-list-stenoRule-3" data-dt-idx="0" tabindex="0" id="table-list-stenoRule-3_previous">Trở về</a><span><a class="paginate_button current" aria-controls="table-list-stenoRule-3" data-dt-idx="1" tabindex="0">1</a><a class="paginate_button " aria-controls="table-list-stenoRule-3" data-dt-idx="2" tabindex="0">2</a><a class="paginate_button " aria-controls="table-list-stenoRule-3" data-dt-idx="3" tabindex="0">3</a></span><a class="paginate_button next" aria-controls="table-list-stenoRule-3" data-dt-idx="4" tabindex="0" id="table-list-stenoRule-3_next">Tiếp theo</a></div></div>
-                                    </div>
-                                </div>
-                            </div>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-12">
+              <div class="card">
+                <div class="card-body">
+                  <div>
+                    <h3 class="text-center">Chi tiết bộ quy tắc gõ </h3>
+                  </div>
+                  <hr>
+                  <ul class="nav nav-pills m-b-20">
+                    <li class="nav-item"><a href="#stenoRule-1" class="nav-link list-group-item active" id="tab-1"
+                        data-toggle="list" aria-expanded="false" role="tab" aria-selected="true">Âm đầu</a></li>
+
+                    <li class="nav-item"><a href="#stenoRule-2" class="nav-link list-group-item" id="tab-2"
+                        data-toggle="list" aria-expanded="false" role="tab" aria-selected="false">Âm chính</a></li>
+
+                    <li class="nav-item"><a href="#stenoRule-3" class="nav-link list-group-item" id="tab-3"
+                        data-toggle="list" aria-expanded="false" role="tab" aria-selected="false">Âm cuối</a></li>
+                  </ul>
+                  <div class="tab-content br-n pn">
+                    <div id="stenoRule-1" class="tab-pane active" role="tabpanel">
+                      <h4 class=" mb-4">Danh sách quy tắc cho Âm đầu</h4>
+                      <div class="table-responsive">
+                        <div id="table-list-stenoRule-1_wrapper" class="dataTables_wrapper no-footer">
+                          <div class="dataTables_length" id="table-list-stenoRule-1_length">
+                            <label>Hiển thị <select name="table-list-stenoRule-1_length"
+                                aria-controls="table-list-stenoRule-1" class="">
+                                <option value="5">5</option>
+                                <option value="10">10</option>
+                                <option value="25">25</option>
+                                <option value="50">50</option>
+                                <option value="-1">All</option>
+                              </select> mục</label></div>
+                          <div id="table-list-stenoRule-1_filter" class="dataTables_filter"><label>Tìm nhanh:<input
+                                type="search" class="" placeholder="" aria-controls="table-list-stenoRule-1"></label>
+                          </div>
+                          <table id="table-list-stenoRule-1"
+                            class="table-list table table-striped table-bordered dataTable no-footer"
+                            style="width: 100%;" role="grid" aria-describedby="table-list-stenoRule-1_info">
+                            <thead>
+                              <tr role="row">
+                                <th class="sorting_asc" tabindex="0" aria-controls="table-list-stenoRule-1" rowspan="1"
+                                  colspan="1" aria-sort="ascending" aria-label="STT: activate to sort column descending"
+                                  style="width: 95.6px;">STT</th>
+                                <th class="sorting" tabindex="0" aria-controls="table-list-stenoRule-1" rowspan="1"
+                                  colspan="1" aria-label="Âm đầu: activate to sort column ascending"
+                                  style="width: 141.6px;">Âm đầu</th>
+                                <th class="sorting" tabindex="0" aria-controls="table-list-stenoRule-1" rowspan="1"
+                                  colspan="1" aria-label="Phím steno: activate to sort column ascending"
+                                  style="width: 187.6px;">Phím steno</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr class="1-column-first odd" role="row">
+                                <td class="index sorting_1">1</td>
+                                <td class="value-word">ngh</td>
+                                <td class="value-key-steno">KR</td>
+                              </tr>
+                              <tr class="2-column-first even" role="row">
+                                <td class="index sorting_1">2</td>
+                                <td class="value-word">đ</td>
+                                <td class="value-key-steno">TP</td>
+                              </tr>
+                              <tr class="3-column-first odd" role="row">
+                                <td class="index sorting_1">3</td>
+                                <td class="value-word">kh</td>
+                                <td class="value-key-steno">KH</td>
+                              </tr>
+                              <tr class="4-column-first even" role="row">
+                                <td class="index sorting_1">4</td>
+                                <td class="value-word">gh</td>
+                                <td class="value-key-steno">KP</td>
+                              </tr>
+                              <tr class="5-column-first odd" role="row">
+                                <td class="index sorting_1">5</td>
+                                <td class="value-word">b</td>
+                                <td class="value-key-steno">P</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                          <div class="dataTables_info" id="table-list-stenoRule-1_info" role="status"
+                            aria-live="polite">Hiển thị 1 đến 5 của 27 mục</div>
+                          <div class="dataTables_paginate paging_simple_numbers" id="table-list-stenoRule-1_paginate"><a
+                              class="paginate_button previous disabled" aria-controls="table-list-stenoRule-1"
+                              data-dt-idx="0" tabindex="0" id="table-list-stenoRule-1_previous">Trở về</a><span><a
+                                class="paginate_button current" aria-controls="table-list-stenoRule-1" data-dt-idx="1"
+                                tabindex="0">1</a><a class="paginate_button " aria-controls="table-list-stenoRule-1"
+                                data-dt-idx="2" tabindex="0">2</a><a class="paginate_button "
+                                aria-controls="table-list-stenoRule-1" data-dt-idx="3" tabindex="0">3</a><a
+                                class="paginate_button " aria-controls="table-list-stenoRule-1" data-dt-idx="4"
+                                tabindex="0">4</a><a class="paginate_button " aria-controls="table-list-stenoRule-1"
+                                data-dt-idx="5" tabindex="0">5</a><a class="paginate_button "
+                                aria-controls="table-list-stenoRule-1" data-dt-idx="6" tabindex="0">6</a></span><a
+                              class="paginate_button next" aria-controls="table-list-stenoRule-1" data-dt-idx="7"
+                              tabindex="0" id="table-list-stenoRule-1_next">Tiếp theo</a></div>
                         </div>
+                      </div>
                     </div>
+
+                    <div id="stenoRule-2" class="tab-pane" role="tabpanel">
+
+
+                      <h4 class=" mb-4">Danh sách quy tắc cho Âm chính</h4>
+
+                      <div class="table-responsive">
+                        <div id="table-list-stenoRule-2_wrapper" class="dataTables_wrapper no-footer">
+                          <div class="dataTables_length" id="table-list-stenoRule-2_length"><label>Hiển thị <select
+                                name="table-list-stenoRule-2_length" aria-controls="table-list-stenoRule-2" class="">
+                                <option value="5">5</option>
+                                <option value="10">10</option>
+                                <option value="25">25</option>
+                                <option value="50">50</option>
+                                <option value="-1">All</option>
+                              </select> mục</label></div>
+                          <div id="table-list-stenoRule-2_filter" class="dataTables_filter"><label>Tìm nhanh:<input
+                                type="search" class="" placeholder="" aria-controls="table-list-stenoRule-2"></label>
+                          </div>
+                          <table id="table-list-stenoRule-2"
+                            class="table-list table table-striped table-bordered dataTable no-footer"
+                            style="width: 100%;" role="grid" aria-describedby="table-list-stenoRule-2_info">
+                            <thead>
+                              <tr role="row">
+                                <th class="sorting_asc" tabindex="0" aria-controls="table-list-stenoRule-2" rowspan="1"
+                                  colspan="1" aria-sort="ascending" aria-label="STT: activate to sort column descending"
+                                  style="width: 0px;">STT</th>
+                                <th class="sorting" tabindex="0" aria-controls="table-list-stenoRule-2" rowspan="1"
+                                  colspan="1" aria-label="Âm chính: activate to sort column ascending"
+                                  style="width: 0px;">Âm chính</th>
+                                <th class="sorting" tabindex="0" aria-controls="table-list-stenoRule-2" rowspan="1"
+                                  colspan="1" aria-label="Phím steno: activate to sort column ascending"
+                                  style="width: 0px;">Phím steno</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr class="1-column-first odd" role="row">
+                                <td class="index sorting_1">1</td>
+                                <td class="value-word">uổ</td>
+                                <td class="value-key-steno">-HSUO</td>
+                              </tr>
+                              <tr class="2-column-first even" role="row">
+                                <td class="index sorting_1">2</td>
+                                <td class="value-word">uỗ</td>
+                                <td class="value-key-steno">N-SUO</td>
+                              </tr>
+                              <tr class="3-column-first odd" role="row">
+                                <td class="index sorting_1">3</td>
+                                <td class="value-word">ă</td>
+                                <td class="value-key-steno">*-A</td>
+                              </tr>
+                              <tr class="4-column-first even" role="row">
+                                <td class="index sorting_1">4</td>
+                                <td class="value-word">uộ</td>
+                                <td class="value-key-steno">N-UO</td>
+                              </tr>
+                              <tr class="5-column-first odd" role="row">
+                                <td class="index sorting_1">5</td>
+                                <td class="value-word">uớ</td>
+                                <td class="value-key-steno">-SY</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                          <div class="dataTables_info" id="table-list-stenoRule-2_info" role="status"
+                            aria-live="polite">Hiển thị 1 đến 5 của 172 mục</div>
+                          <div class="dataTables_paginate paging_simple_numbers" id="table-list-stenoRule-2_paginate"><a
+                              class="paginate_button previous disabled" aria-controls="table-list-stenoRule-2"
+                              data-dt-idx="0" tabindex="0" id="table-list-stenoRule-2_previous">Trở về</a><span><a
+                                class="paginate_button current" aria-controls="table-list-stenoRule-2" data-dt-idx="1"
+                                tabindex="0">1</a><a class="paginate_button " aria-controls="table-list-stenoRule-2"
+                                data-dt-idx="2" tabindex="0">2</a><a class="paginate_button "
+                                aria-controls="table-list-stenoRule-2" data-dt-idx="3" tabindex="0">3</a><a
+                                class="paginate_button " aria-controls="table-list-stenoRule-2" data-dt-idx="4"
+                                tabindex="0">4</a><a class="paginate_button " aria-controls="table-list-stenoRule-2"
+                                data-dt-idx="5" tabindex="0">5</a><span class="ellipsis">…</span><a
+                                class="paginate_button " aria-controls="table-list-stenoRule-2" data-dt-idx="6"
+                                tabindex="0">35</a></span><a class="paginate_button next"
+                              aria-controls="table-list-stenoRule-2" data-dt-idx="7" tabindex="0"
+                              id="table-list-stenoRule-2_next">Tiếp theo</a></div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div id="stenoRule-3" class="tab-pane" role="tabpanel">
+
+
+                      <h4 class="mb-4">Danh sách quy tắc cho Âm cuối</h4>
+
+                      <div class="table-responsive">
+                        <div id="table-list-stenoRule-3_wrapper" class="dataTables_wrapper no-footer">
+                          <div class="dataTables_length" id="table-list-stenoRule-3_length"><label>Hiển thị <select
+                                name="table-list-stenoRule-3_length" aria-controls="table-list-stenoRule-3" class="">
+                                <option value="5">5</option>
+                                <option value="10">10</option>
+                                <option value="25">25</option>
+                                <option value="50">50</option>
+                                <option value="-1">All</option>
+                              </select> mục</label></div>
+                          <div id="table-list-stenoRule-3_filter" class="dataTables_filter"><label>Tìm nhanh:<input
+                                type="search" class="" placeholder="" aria-controls="table-list-stenoRule-3"></label>
+                          </div>
+                          <table id="table-list-stenoRule-3"
+                            class="table-list table table-striped table-bordered dataTable no-footer"
+                            style="width: 100%;" role="grid" aria-describedby="table-list-stenoRule-3_info">
+                            <thead>
+                              <tr role="row">
+                                <th class="sorting_asc" tabindex="0" aria-controls="table-list-stenoRule-3" rowspan="1"
+                                  colspan="1" aria-sort="ascending" aria-label="STT: activate to sort column descending"
+                                  style="width: 0px;">STT</th>
+                                <th class="sorting" tabindex="0" aria-controls="table-list-stenoRule-3" rowspan="1"
+                                  colspan="1" aria-label="Âm cuối: activate to sort column ascending"
+                                  style="width: 0px;">Âm cuối</th>
+                                <th class="sorting" tabindex="0" aria-controls="table-list-stenoRule-3" rowspan="1"
+                                  colspan="1" aria-label="Phím steno: activate to sort column ascending"
+                                  style="width: 0px;">Phím steno</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr class="1-column-first odd" role="row">
+                                <td class="index sorting_1">1</td>
+                                <td class="value-word">p</td>
+                                <td class="value-key-steno">-TK</td>
+                              </tr>
+                              <tr class="2-column-first even" role="row">
+                                <td class="index sorting_1">2</td>
+                                <td class="value-word">c</td>
+                                <td class="value-key-steno">-NK</td>
+                              </tr>
+                              <tr class="3-column-first odd" role="row">
+                                <td class="index sorting_1">3</td>
+                                <td class="value-word">t</td>
+                                <td class="value-key-steno">-NT</td>
+                              </tr>
+                              <tr class="4-column-first even" role="row">
+                                <td class="index sorting_1">4</td>
+                                <td class="value-word">ch</td>
+                                <td class="value-key-steno">-GK</td>
+                              </tr>
+                              <tr class="5-column-first odd" role="row">
+                                <td class="index sorting_1">5</td>
+                                <td class="value-word">u</td>
+                                <td class="value-key-steno">-JG</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                          <div class="dataTables_info" id="table-list-stenoRule-3_info" role="status"
+                            aria-live="polite">Hiển thị 1 đến 5 của 12 mục</div>
+                          <div class="dataTables_paginate paging_simple_numbers" id="table-list-stenoRule-3_paginate"><a
+                              class="paginate_button previous disabled" aria-controls="table-list-stenoRule-3"
+                              data-dt-idx="0" tabindex="0" id="table-list-stenoRule-3_previous">Trở về</a><span><a
+                                class="paginate_button current" aria-controls="table-list-stenoRule-3" data-dt-idx="1"
+                                tabindex="0">1</a><a class="paginate_button " aria-controls="table-list-stenoRule-3"
+                                data-dt-idx="2" tabindex="0">2</a><a class="paginate_button "
+                                aria-controls="table-list-stenoRule-3" data-dt-idx="3" tabindex="0">3</a></span><a
+                              class="paginate_button next" aria-controls="table-list-stenoRule-3" data-dt-idx="4"
+                              tabindex="0" id="table-list-stenoRule-3_next">Tiếp theo</a></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
+              </div>
             </div>
           </div>
+        </div>
       </section>
     </div>
-</div>
-<!-- /.content-wrapper -->
+  </div>
+  <!-- /.content-wrapper -->
 
-<!-- Control Sidebar -->
-<aside class="control-sidebar control-sidebar-dark">
+  <!-- Control Sidebar -->
+  <aside class="control-sidebar control-sidebar-dark">
     <!-- Control sidebar content goes here -->
     <div class="p-3">
-        <h5>Title</h5>
-        <p>Sidebar content</p>
+      <h5>Title</h5>
+      <p>Sidebar content</p>
     </div>
-</aside>
-<!-- /.control-sidebar -->
+  </aside>
+  <!-- /.control-sidebar -->
 
-<!-- Main Footer -->
-<footer class="main-footer">
+  <!-- Main Footer -->
+  <footer class="main-footer">
     <!-- To the right -->
     <div class="float-right d-none d-sm-inline">
-        Anything you want
+      Anything you want
     </div>
     <!-- Default to the left -->
     <strong>Copyright &copy; 2014-2019 <a href="https://adminlte.io">AdminLTE.io</a>.</strong> All rights reserved.
-</footer>
-</div>
-<!-- ./wrapper -->
+  </footer>
+  </div>
+  <!-- ./wrapper -->
 
-<!-- REQUIRED SCRIPTS -->
+  <!-- REQUIRED SCRIPTS -->
 
-<!-- jQuery -->
-<script src="plugins/jquery/jquery.min.js"></script>
-<!-- Bootstrap 4 -->
-<script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
-<!-- AdminLTE App -->
-<script src="dist/js/adminlte.min.js"></script>
+  <!-- jQuery -->
+  <script src="plugins/jquery/jquery.min.js"></script>
+  <!-- Bootstrap 4 -->
+  <script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <!-- AdminLTE App -->
+  <script src="dist/js/adminlte.min.js"></script>
 </body>
 
-</html>   
+</html>

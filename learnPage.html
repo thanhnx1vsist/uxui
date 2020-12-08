@@ -20,7 +20,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <!-- Google Font: Source Sans Pro -->
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
-    
+
     <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!-- Popper JS -->
@@ -33,15 +33,17 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <link rel="stylesheet" href="./styles.css" />
 </head>
 <style>
-    #newbie{
+    #newbie {
         position: relative;
     }
+
     a:hover {
         text-decoration: none;
     }
+
     ul.nav-pills {
-    top: 180px;
-    position: fixed;
+        top: 180px;
+        position: fixed;
     }
 
     div.col-8 div {
@@ -50,18 +52,22 @@ scratch. This page gets rid of all links and provides the needed markup only.
         padding-top: 20px;
         padding-bottom: 20px;
     }
+
     #newbie .col-8 ul li {
         list-style-type: square;
         margin-left: 20px;
         margin-bottom: 10px;
     }
+
     #newbie .col-8 ul li ul li {
         list-style-type: circle;
         margin-left: 20px;
         margin-top: 10px;
     }
-    #master, #supermaster{
-        padding-top : 20px;
+
+    #master,
+    #supermaster {
+        padding-top: 20px;
         padding-bottom: 20px;
     }
 </style>
@@ -77,7 +83,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                     <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
                 </li>
                 <li class="nav-item d-none d-sm-inline-block">
-                    <a href="index3.html" class="nav-link">Home</a>
+                    <a href="index4.html" class="nav-link">Home</a>
                 </li>
                 <li class="nav-item d-none d-sm-inline-block">
                     <a href="#" class="nav-link">Contact</a>
@@ -199,7 +205,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
         <!-- Main Sidebar Container -->
         <aside class="main-sidebar sidebar-dark-primary elevation-4">
             <!-- Brand Logo -->
-            <a href="index3.html" class="brand-link">
+            <a href="index4.html" class="brand-link">
                 <img src="dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"
                     style="opacity: .8">
                 <span class="brand-text font-weight-light">HCI 18</span>
@@ -222,7 +228,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                     <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu"
                         data-accordion="false">
                         <!-- Add icons to the links using the .nav-icon class
-               with font-awesome or any other icon font library -->
+                               with font-awesome or any other icon font library -->
                         <li class="nav-item has-treeview menu-open">
                             <a href="#" class="nav-link active">
                                 <i class="nav-icon fas fa-tachometer-alt"></i>
@@ -231,9 +237,31 @@ scratch. This page gets rid of all links and provides the needed markup only.
                                     <i class="right fas fa-angle-left"></i>
                                 </p>
                             </a>
+                            <ul class="nav nav-treeview">
+                                <li class="nav-item">
+                                    <a href="listCourse.html" class="nav-link active">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>Cơ bản</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="practice.html" class="nav-link">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>Nâng cao</p>
+                                    </a>
+                                </li>
+                            </ul>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link">
+                            <a href="learnPage.html" class="nav-link">
+                                <i class="fas fa-theater-masks"></i>
+                                <p>
+                                    Lý thuyết
+                                </p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="ranking.html" class="nav-link">
                                 <i class="fas fa-theater-masks"></i>
                                 <p>
                                     Bảng xếp hạng
@@ -241,7 +269,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link">
+                            <a href="dictionary.html" class="nav-link">
                                 <i class="fas fa-spell-check"></i>
                                 <p>
                                     Từ điển
@@ -298,145 +326,184 @@ scratch. This page gets rid of all links and provides the needed markup only.
                                     </li>
                                 </ul>
                                 <div class="tab-content">
-                                    <div id="newbie" class="container tab-pane active" data-spy="scroll" data-target="#myScrollspy" data-offset="1"><br>
+                                    <div id="newbie" class="container tab-pane active" data-spy="scroll"
+                                        data-target="#myScrollspy" data-offset="1"><br>
                                         <div class="container-fluid">
                                             <div class="row">
-                                              <nav class=" col-4" id="myScrollspy" >
-                                                <ul class="nav nav-pills flex-column">
-                                                  <li class="nav-item">
-                                                    <a class="nav-link active col-10" href="#section1">Mục tiêu</a>
-                                                  </li>
-                                                  <li class="nav-item">
-                                                    <a class="nav-link col-10" href="#section2">Giới thiệu bàn phím gõ tốc ký tiếng Việt</a>
-                                                  </li>
-                                                  <li class="nav-item">
-                                                    <a class="nav-link col-10" href="#section3">Nguyên tắc gõ tốc ký</a>
-                                                  </li>
-                                                </ul>
-                                              </nav>
-                                              <div class=" col-8">
-                                                <div id="section1">    
-                                                  <span style="font-size: 20px;">Mục tiêu</span><br><br>
-                                                  <ul>
-                                                      <li><p>Học viên hiểu được cấu trúc bàn phím gõ tốc ký tiếng
-                                                        Việt, ánh xạ được các phím trên bàn phím gõ tốc ký
-                                                        tiếng Việt và bàn phím QWERTY thông thường.</p></li>
-                                                        <li>
-                                                            <p>Học viên hiểu, ghi nhớ được các quy tắc gõ tốc ký
-                                                                tiếng Việt</p>
+                                                <nav class=" col-4" id="myScrollspy">
+                                                    <ul class="nav nav-pills flex-column">
+                                                        <li class="nav-item">
+                                                            <a class="nav-link active col-10" href="#section1">Mục
+                                                                tiêu</a>
                                                         </li>
-                                                        <li>
-                                                            <p>Hỗ trợ học viên rèn luyện kỹ năng gõ tốc ký, hướng
-                                                                tới mục tiêu gõ tốc ký với tốc độ gõ là 130wpm.</p>
+                                                        <li class="nav-item">
+                                                            <a class="nav-link col-10" href="#section2">Giới thiệu bàn
+                                                                phím gõ tốc ký tiếng Việt</a>
                                                         </li>
-                                                  </ul>
-                                                </div>
-                                                <div id="section2"> 
-                                                    <span style="font-size: 20px;">Bàn phím gõ tốc ký (Steno)</span><br><br>
-                                                    <ul>
-                                                        <li>
-                                                            <p>Bàn phím gõ tốc ký tiếng Việt gồm 22 phím + 1 phím dài</p>
-                                                            <ul>
-                                                                <li>
-                                                                    <p>4 phím đặc biệt (S, T, H, N), nhãn trùng nhau nhưng vai trò khác nhau</p>
-                                                                </li>
-                                                                <li>
-                                                                    <p>1 phím dài để chuyển chế độ gõ số</p>
-                                                                </li>
-                                                                <li>
-                                                                    <p>Bàn phím gõ tốc ký tiếng Việt được ánh xạ lên bàn phím Qwerty gồm 24 phím.</p> 
-                                                                </li>
-                                                                <li>
-                                                                    <p>Dải số từ 1-0 tương ứng với thanh số trên bàn phím gõ tốc ký tiếng Việt</p><br><br>
-                                                                    <img src="../uxui/image/banphim.png" class="img-responsive"/>
-                                                                </li>
-                                                            </ul>
+                                                        <li class="nav-item">
+                                                            <a class="nav-link col-10" href="#section3">Nguyên tắc gõ
+                                                                tốc ký</a>
                                                         </li>
                                                     </ul>
-                                                    <br><br>
-                                                    <span style="font-size: 20px;">Cách đặt ngón tay trên bàn phím tốc ký</span><br><br>
-                                                    <ul>
-                                                        <li>
-                                                            <img src="../uxui/image/cachdattaygotu.png" class="img-responsive"/>
-                                                        </li>
-                                                        <li>
-                                                            <img src="../uxui/image/cachdattaygoso.png" class="img-responsive"/>
-                                                        </li>
-                                                    </ul>
-                                                    <span style="font-size: 20px;">Trật tự của bàn phím gõ tốc ký</span><br><br>
-                                                    <img src="../uxui/image/trattugophim.png" class="img-responsive"/>
-                                                    <ul>
-                                                        <li>
-                                                            <p>Trật tự của bàn phím theo chiều mũi tên (S T K P R H N H S * I U O E A W Y J N G T K),
-                                                                từ trái qua phải, từ trên xuống dưới.</p>
-                                                        </li>
-                                                        <li>
-                                                            <p>Bất cứ tổ hợp phím nào phù hợp với trật tự này thì đều có thể gõ trong một lượt
-                                                                nhấn.</p>
-                                                        </li>
-                                                        <li>
-                                                            <p>Việc ghi nhớ trật tự các phím là rất quan trọng vì bàn phím gõ tốc ký tiếng Việt gồm
-                                                                nhiều phím trùng nhau, tuy nhiên mỗi vị trí lại có chức năng khác nhau.</p>
-                                                        </li>
-                                                    </ul>
-                                                    <span style="font-size: 20px;">Thực hành: làm quen với bàn phím tốc ký
-                                                        tiếng Việt – gõ theo hướng dẫn</span><br><br>
+                                                </nav>
+                                                <div class=" col-8">
+                                                    <div id="section1">
+                                                        <span style="font-size: 20px;">Mục tiêu</span><br><br>
+                                                        <ul>
+                                                            <li>
+                                                                <p>Học viên hiểu được cấu trúc bàn phím gõ tốc ký tiếng
+                                                                    Việt, ánh xạ được các phím trên bàn phím gõ tốc ký
+                                                                    tiếng Việt và bàn phím QWERTY thông thường.</p>
+                                                            </li>
+                                                            <li>
+                                                                <p>Học viên hiểu, ghi nhớ được các quy tắc gõ tốc ký
+                                                                    tiếng Việt</p>
+                                                            </li>
+                                                            <li>
+                                                                <p>Hỗ trợ học viên rèn luyện kỹ năng gõ tốc ký, hướng
+                                                                    tới mục tiêu gõ tốc ký với tốc độ gõ là 130wpm.</p>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div id="section2">
+                                                        <span style="font-size: 20px;">Bàn phím gõ tốc ký
+                                                            (Steno)</span><br><br>
+                                                        <ul>
+                                                            <li>
+                                                                <p>Bàn phím gõ tốc ký tiếng Việt gồm 22 phím + 1 phím
+                                                                    dài</p>
+                                                                <ul>
+                                                                    <li>
+                                                                        <p>4 phím đặc biệt (S, T, H, N), nhãn trùng nhau
+                                                                            nhưng vai trò khác nhau</p>
+                                                                    </li>
+                                                                    <li>
+                                                                        <p>1 phím dài để chuyển chế độ gõ số</p>
+                                                                    </li>
+                                                                    <li>
+                                                                        <p>Bàn phím gõ tốc ký tiếng Việt được ánh xạ lên
+                                                                            bàn phím Qwerty gồm 24 phím.</p>
+                                                                    </li>
+                                                                    <li>
+                                                                        <p>Dải số từ 1-0 tương ứng với thanh số trên bàn
+                                                                            phím gõ tốc ký tiếng Việt</p><br><br>
+                                                                        <img src="../uxui/image/banphim.png"
+                                                                            class="img-responsive" />
+                                                                    </li>
+                                                                </ul>
+                                                            </li>
+                                                        </ul>
+                                                        <br><br>
+                                                        <span style="font-size: 20px;">Cách đặt ngón tay trên bàn phím
+                                                            tốc ký</span><br><br>
+                                                        <ul>
+                                                            <li>
+                                                                <img src="../uxui/image/cachdattaygotu.png"
+                                                                    class="img-responsive" />
+                                                            </li>
+                                                            <li>
+                                                                <img src="../uxui/image/cachdattaygoso.png"
+                                                                    class="img-responsive" />
+                                                            </li>
+                                                        </ul>
+                                                        <span style="font-size: 20px;">Trật tự của bàn phím gõ tốc
+                                                            ký</span><br><br>
+                                                        <img src="../uxui/image/trattugophim.png"
+                                                            class="img-responsive" />
+                                                        <ul>
+                                                            <li>
+                                                                <p>Trật tự của bàn phím theo chiều mũi tên (S T K P R H
+                                                                    N H S * I U O E A W Y J N G T K),
+                                                                    từ trái qua phải, từ trên xuống dưới.</p>
+                                                            </li>
+                                                            <li>
+                                                                <p>Bất cứ tổ hợp phím nào phù hợp với trật tự này thì
+                                                                    đều có thể gõ trong một lượt
+                                                                    nhấn.</p>
+                                                            </li>
+                                                            <li>
+                                                                <p>Việc ghi nhớ trật tự các phím là rất quan trọng vì
+                                                                    bàn phím gõ tốc ký tiếng Việt gồm
+                                                                    nhiều phím trùng nhau, tuy nhiên mỗi vị trí lại có
+                                                                    chức năng khác nhau.</p>
+                                                            </li>
+                                                        </ul>
+                                                        <span style="font-size: 20px;">Thực hành: làm quen với bàn phím
+                                                            tốc ký
+                                                            tiếng Việt – gõ theo hướng dẫn</span><br><br>
                                                         <p>Click vào phần luyện gõ của trang web.</p>
-                                                </div>        
-                                                <div id="section3">         
-                                                    <span style="font-size: 20px;">QUY TẮC GÕ ÂM TIẾT (TỪ ĐƠN) TIẾNG
-                                                        VIỆT TRÊN BÀN PHÍM GÕ TỐC KÝ (Steno)</span><br><br>
-                                                    <img src="../uxui/image/cautrucamtutiengviet.png" style="max-width: 100%;" class="img-responsive"/>
-                                                    <ul>
-                                                        <li>
-                                                            <p>Gõ tốc ký tiếng Việt là gõ theo cách phát âm.</p>
-                                                        </li>
-                                                        <li>
-                                                            <p>Tuỳ thuộc vào cách phát âm, một bộ phím biểu diễn một âm tiết tiếng Việt có thể bao gồm các thành phần:</p>
-                                                            <ul>
-                                                                <li>
-                                                                    <p>Âm đầu + Âm chính (VD: hòa, xã, chủ, tự, do, vị, gõ, từ,...)</p>
-                                                                </li>
-                                                                <li>
-                                                                    <p>Âm chính (VD: ủy, ưa, ỉ, ồ, á, ừ, ỷ, ...)</p>
-                                                                </li>
-                                                                <li>
-                                                                    <p>Âm chính + Âm cuối (VD: ánh, ình, ông, ong, ...)</p>
-                                                                </li>
-                                                                <li>
-                                                                    <p>Âm đầu + Âm chính + Âm cuối (VD: cộng, hội, hết,...)</p>
-                                                                </li>
-                                                            </ul>
-                                                        </li>
-                                                        
-                                                    </ul>
-                                                    <img src="../uxui/image/cautrucbanphimtuongung.png" class="img-responsive" style="max-width: 100%;"/>
-                                                    <br><br><span style="font-size: 20px;">QUY TẮC GÕ ÂM ĐẦU</span><br><br>
-                                                    <ul>
-                                                        <li>
-                                                            <img src="../uxui/image/quytacgoamdau.png" class="img-responsive" style="max-width: 100%;"/>
-                                                        </li>
-                                                        <li>
-                                                            <img src="../uxui/image/quytacgoamdau11.png" class="img-responsive" style="max-width: 100%;"/>
-                                                        </li>
-                                                    </ul><br><br>
-                                                    <p>Do tài liệu còn nhiều nên các bạn có thể tham khảo link sau</p><br><br>
-                                                    <a href="https://drive.google.com/file/d/1GWzQTxJ0-HwLyERvmiBBUso_rYQc4GxA/view">https://drive.google.com/file/d/1GWzQTxJ0-HwLyERvmiBBUso_rYQc4GxA/view</a>
-                                                    <br><br><p>Xin lỗi vì sự bất tiện này.</p>
+                                                    </div>
+                                                    <div id="section3">
+                                                        <span style="font-size: 20px;">QUY TẮC GÕ ÂM TIẾT (TỪ ĐƠN) TIẾNG
+                                                            VIỆT TRÊN BÀN PHÍM GÕ TỐC KÝ (Steno)</span><br><br>
+                                                        <img src="../uxui/image/cautrucamtutiengviet.png"
+                                                            style="max-width: 100%;" class="img-responsive" />
+                                                        <ul>
+                                                            <li>
+                                                                <p>Gõ tốc ký tiếng Việt là gõ theo cách phát âm.</p>
+                                                            </li>
+                                                            <li>
+                                                                <p>Tuỳ thuộc vào cách phát âm, một bộ phím biểu diễn một
+                                                                    âm tiết tiếng Việt có thể bao gồm các thành phần:
+                                                                </p>
+                                                                <ul>
+                                                                    <li>
+                                                                        <p>Âm đầu + Âm chính (VD: hòa, xã, chủ, tự, do,
+                                                                            vị, gõ, từ,...)</p>
+                                                                    </li>
+                                                                    <li>
+                                                                        <p>Âm chính (VD: ủy, ưa, ỉ, ồ, á, ừ, ỷ, ...)</p>
+                                                                    </li>
+                                                                    <li>
+                                                                        <p>Âm chính + Âm cuối (VD: ánh, ình, ông, ong,
+                                                                            ...)</p>
+                                                                    </li>
+                                                                    <li>
+                                                                        <p>Âm đầu + Âm chính + Âm cuối (VD: cộng, hội,
+                                                                            hết,...)</p>
+                                                                    </li>
+                                                                </ul>
+                                                            </li>
+
+                                                        </ul>
+                                                        <img src="../uxui/image/cautrucbanphimtuongung.png"
+                                                            class="img-responsive" style="max-width: 100%;" />
+                                                        <br><br><span style="font-size: 20px;">QUY TẮC GÕ ÂM
+                                                            ĐẦU</span><br><br>
+                                                        <ul>
+                                                            <li>
+                                                                <img src="../uxui/image/quytacgoamdau.png"
+                                                                    class="img-responsive" style="max-width: 100%;" />
+                                                            </li>
+                                                            <li>
+                                                                <img src="../uxui/image/quytacgoamdau11.png"
+                                                                    class="img-responsive" style="max-width: 100%;" />
+                                                            </li>
+                                                        </ul><br><br>
+                                                        <p>Do tài liệu còn nhiều nên các bạn có thể tham khảo link sau
+                                                        </p><br><br>
+                                                        <a
+                                                            href="https://drive.google.com/file/d/1GWzQTxJ0-HwLyERvmiBBUso_rYQc4GxA/view">https://drive.google.com/file/d/1GWzQTxJ0-HwLyERvmiBBUso_rYQc4GxA/view</a>
+                                                        <br><br>
+                                                        <p>Xin lỗi vì sự bất tiện này.</p>
+                                                    </div>
                                                 </div>
-                                              </div>
                                             </div>
-                                          </div>
+                                        </div>
                                     </div>
                                     <div id="master" class="container tab-pane fade"><br>
-                                      
-                                      <span style="font-size: 20px;">Hiện tại trang web đang trong giai đoạn phát triển. Các bạn có thể tham khảo link sau:</span><br><br>
-                                      <a href="https://drive.google.com/file/d/1GWzQTxJ0-HwLyERvmiBBUso_rYQc4GxA/view">https://drive.google.com/file/d/1GWzQTxJ0-HwLyERvmiBBUso_rYQc4GxA/view</a>
+
+                                        <span style="font-size: 20px;">Hiện tại trang web đang trong giai đoạn phát
+                                            triển. Các bạn có thể tham khảo link sau:</span><br><br>
+                                        <a
+                                            href="https://drive.google.com/file/d/1GWzQTxJ0-HwLyERvmiBBUso_rYQc4GxA/view">https://drive.google.com/file/d/1GWzQTxJ0-HwLyERvmiBBUso_rYQc4GxA/view</a>
                                     </div>
                                     <div id="supermaster" class="container tab-pane fade"><br>
-                                      <span style="font-size: 20px;">Tính năng này hiện chưa có....</span>
-                                      <span style="font-size: 20px;">Trong thời gian chờ đợi, các bạn có thể tham khảo link sau:</span><br><br>
-                                      <a href="https://drive.google.com/file/d/1GWzQTxJ0-HwLyERvmiBBUso_rYQc4GxA/view">https://drive.google.com/file/d/1GWzQTxJ0-HwLyERvmiBBUso_rYQc4GxA/view</a>
+                                        <span style="font-size: 20px;">Tính năng này hiện chưa có....</span>
+                                        <span style="font-size: 20px;">Trong thời gian chờ đợi, các bạn có thể tham khảo
+                                            link sau:</span><br><br>
+                                        <a
+                                            href="https://drive.google.com/file/d/1GWzQTxJ0-HwLyERvmiBBUso_rYQc4GxA/view">https://drive.google.com/file/d/1GWzQTxJ0-HwLyERvmiBBUso_rYQc4GxA/view</a>
                                     </div>
                                 </div>
                                 <!-- /.card-body -->
