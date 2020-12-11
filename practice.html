@@ -55,14 +55,48 @@ scratch. This page gets rid of all links and provides the needed markup only.
             else if (x === 192) {
                 id = '`'
             }
+            else if (x === 219) {
+                id = "["
+            }
+            else if (x === 221) {
+                id = "]"
+            }
+            else if (x == 186) {
+                id = ";"
+            }
+            else if (x === 222) {
+                id = "''"
+            }
             else {
                 var id = String.fromCharCode(x);
             }
+            console.log(x);
             var button = document.getElementById(id);
-            button.style.backgroundColor = "red";
-            setTimeout(() => {
-                button.style.backgroundColor = '';
-            }, 500);
+            var button2 = document.getElementsByClassName(id);
+            console.log(button2);
+            let id2;
+            // if (id === "Q") {
+            //     id2 = "S";
+            // }
+            // else if (id === "W") id2 = "K";
+            // else if (id === "E") id2 = "R";
+            // else if(id === "R") id2 = "N";
+            // else if(id=== "T") id2 = "H";
+            // else if(id2=== "U") id2 = "8"
+
+            if (button) {
+                button.style.backgroundColor = "red";
+                setTimeout(() => {
+                    button.style.backgroundColor = '';
+                }, 500);
+            }
+
+            if (button2.length) {
+                button2[button2.length - 1].style.backgroundColor = "blue";
+                setTimeout(() => {
+                    button2[button2.length - 1].style.backgroundColor = '';
+                }, 500);
+            }
         }
         console.log(screen.width);
     </script>
@@ -428,7 +462,8 @@ scratch. This page gets rid of all links and provides the needed markup only.
                                     <div class="col-6">
                                         <div class="col-12">
                                             <div id="pattern" class="col-12">
-                                                <p style="font-size: 80px;">NGH - <span style="color: red;">KR</span></p>
+                                                <p style="font-size: 80px;">NGH - <span style="color: red;">KR</span>
+                                                </p>
                                             </div>
                                             <textarea id="write" class="text-area col-12" placeholder="go vao day"
                                                 onkeydown="myFunction(event)">
@@ -539,11 +574,11 @@ scratch. This page gets rid of all links and provides the needed markup only.
                                             </li>
                                             <li class="delete lastitem" id="delete">delete</li>
                                             <li class="tab">tab</li>
-                                            <li class="letter" id="Q"><span class="bot off">Q</span><span
+                                            <li class="letter " id="Q"><span class="bot off">Q</span><span
                                                     class="top off">S</span></li>
-                                            <li class="letter" id="W"><span class="bot off">W</span><span
+                                            <li class="letter " id="W"><span class="bot off">W</span><span
                                                     class="top off">K</span></li>
-                                            <li class="letter" id="E"><span class="bot off">E</span><span
+                                            <li class="letter " id="E"><span class="bot off">E</span><span
                                                     class="top off">R</span></li>
                                             <li class="letter" id="R"><span class="bot off">R</span><span
                                                     class="top off">N</span></li>
@@ -559,11 +594,11 @@ scratch. This page gets rid of all links and provides the needed markup only.
                                                     class="top off">J</span></li>
                                             <li class="letter" id="P"><span class="bot off">P</span><span
                                                     class="top off">N</span></li>
-                                            <li class="symbol"><span class="bot off">[</span><span
+                                            <li class="symbol" id="["><span class="bot off">[</span><span
                                                     class="top off">T</span></li>
-                                            <li class="symbol"><span class="bot off">]</span><span
+                                            <li class="symbol" id="]"><span class="bot off">]</span><span
                                                     class="top off">}</span></li>
-                                            <li class="symbol lastitem"><span class="bot off">\</span><span
+                                            <li class="symbol lastitem |"><span class="bot off">\</span><span
                                                     class="top off">|</span>
                                             </li>
                                             <li class="capslock">caps lock</li>
@@ -584,10 +619,10 @@ scratch. This page gets rid of all links and provides the needed markup only.
                                             <li class="letter" id="K"><span class="bot off">K</span><span
                                                     class="top off">Y</span></li>
                                             <li class="letter" id="L"><span class="bot off">L</span><span
-                                                    class="top off">J</span></li>
-                                            <li class="symbol"><span class="bot off">;</span><span
+                                                    class="top off J">J</span></li>
+                                            <li class="symbol" id=";"><span class="bot off">;</span><span
                                                     class="top off">G</span></li>
-                                            <li class="symbol"><span class="bot off">'</span><span
+                                            <li class="symbol" id="''"><span class="bot off">'</span><span
                                                     class="top off">K</span></li>
                                             <li class="return lastitem">enter</li>
                                             <li class="left-shift">shift</li>
@@ -618,30 +653,30 @@ scratch. This page gets rid of all links and provides the needed markup only.
                                     <div id="secondkeyboard" class="col-5">
                                         <ul id="keyboard2">
                                             <li id="space-second" class="space lastitem">&nbsp;</li>
-                                            <li class="letter">S</li>
-                                            <li class="letter">K</li>
-                                            <li class="letter">R</li>
-                                            <li class="letter">N</li>
-                                            <li class="letter">H</li>
-                                            <li class="letter">*</li>
-                                            <li class="letter">W</li>
-                                            <li class="letter">J</li>
-                                            <li class="letter">N</li>
-                                            <li class="letter">T</li>
-                                            <li class="letter" style="clear: left;">T</li>
-                                            <li class="letter">P</li>
-                                            <li class="letter">H</li>
-                                            <li class="letter">N</li>
-                                            <li class="letter">S</li>
-                                            <li class="letter">I</li>
-                                            <li class="letter">Y</li>
-                                            <li class="letter">J</li>
-                                            <li class="letter">G</li>
-                                            <li class="letter">K</li>
-                                            <li class="letter lastrow">U</li>
-                                            <li class="letter">O</li>
-                                            <li class="letter">E</li>
-                                            <li class="letter">A</li>
+                                            <li class="letter Q">S</li>
+                                            <li class="letter W">K</li>
+                                            <li class="letter E">R</li>
+                                            <li class="letter R">N</li>
+                                            <li class="letter T">H</li>
+                                            <li class="letter U">*</li>
+                                            <li class="letter I">W</li>
+                                            <li class="letter O">J</li>
+                                            <li class="letter P">N</li>
+                                            <li class="letter [">T</li>
+                                            <li class="letter A" style="clear: left;">T</li>
+                                            <li class="letter S">P</li>
+                                            <li class="letter D">H</li>
+                                            <li class="letter F">N</li>
+                                            <li class="letter G">S</li>
+                                            <li class="letter J">I</li>
+                                            <li class="letter K">Y</li>
+                                            <li class="letter K">J</li>
+                                            <li class="letter :">G</li>
+                                            <li class="letter ''">K</li>
+                                            <li class="letter lastrow C">U</li>
+                                            <li class="letter V">O</li>
+                                            <li class="letter N">E</li>
+                                            <li class="letter M">A</li>
                                         </ul>
                                     </div>
                                 </div>
