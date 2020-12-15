@@ -11,16 +11,16 @@ btnStart.style.display="block";
 game.style.display="none";
 
 const qList=[{
-    question:"m may tuoi?",
-    ans: [1,2,3,4]
+    question:"Đây là trang học gì ?",
+    ans: ["Tốc chiến","Tốc Hành","Tốc Độ","Tốc Ký"]
 },
 {
-    question:"cu m bn cm?",
-    ans: [10,20,30,40]
+    question:"Làm sao để gõ tốc ký nhanh?",
+    ans: ["Thuộc quy tắc","Chăm chỉ","Luyện tập","Cả 3 đáp án trên"]
 },
 {
-    question:"Tuan Dep Trai?",
-    ans: ["okee","okee","Okee","Okeokeoke"]
+    question:"Đâu không phải là một khuyết điểm của tốc ký",
+    ans: ["Âm /Cờ/","Âm /Gờ/","Âm /Ngờ/","Âm /Lờ/"]
 }
 ]
 
@@ -38,7 +38,7 @@ da4.innerHTML=qList[i].ans[3];
 question.innerHTML=qList[i].question;
 btn.addEventListener('click',()=>{
     if(i>qList.length-2){
-        game.innerHTML="10d ve cho"
+        game.innerHTML="Bạn đã hoàn thành trò chơi với kết quả 2/3"
     } else{
         question.innerHTML=qList[i+1].question;
         da1.innerHTML=qList[i+1].ans[0];
