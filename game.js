@@ -6,6 +6,10 @@ const da2 =document.getElementById("da2")
 const da3 =document.getElementById("da3")
 const da4 =document.getElementById("da4")
 const game =document.getElementById("game")
+var radioBtn0 =document.getElementById("radio0")
+var radioBtn1=document.getElementById("radio1")
+var radioBtn2 =document.getElementById("radio2")
+var radioBtn3 =document.getElementById("radio3")
 
 btnStart.style.display="block";
 game.style.display="none";
@@ -30,6 +34,7 @@ btnStart.addEventListener('click',()=>{
 
 })
 
+
 let i=0;
 da1.innerHTML=qList[i].ans[0];
 da2.innerHTML=qList[i].ans[1];
@@ -48,4 +53,8 @@ btn.addEventListener('click',()=>{
     }
     ///
     i++
+    radioBtn0.checked = false;
+    radioBtn1.checked = false;
+    radioBtn2.checked = false;
+    radioBtn3.checked = false;
 })
